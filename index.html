@@ -10,10 +10,15 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+  <!-- CSS for Owl Carousel-->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
 </head>
 
 <body>
-<!--  navigation  -->
+  <!--  navigation  -->
   <div class="navbar-fixed">
     <nav id="navbar" role="navigation">
       <div class="navbar-fixed nav-wrapper container">
@@ -21,7 +26,7 @@
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
           <li><a href="#aboutme-section">About</a></li>
-          <li><a href="#">Skills</a></li>
+          <li><a href="#skills-section">Skills</a></li>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
@@ -34,30 +39,82 @@
     <li><a href="#">Portfolio</a></li>
     <li><a href="#">Contact</a></li>
   </ul>
-  
-<div id="hera-image-area">
-    
-</div>
 
+  <div id="hera-image-area"></div>
 
   <div class="container">
     <section id="aboutme-section" class="row">
-    <!--<h2>About Me</h2>-->
+      <div class="col s5">
+        <div class="about-img-bg">
+          <img src="images/brian.jpg" alt="brian lynch headshot">
+        </div>
+      </div>
+      <div class=" col s7 about-descr">
+        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quidem in libero ex dolores ea, veniam vitae. Magnam, eligendi, sunt! Voluptatum recusandae magnam nulla debitis, fugit, adipisci corrupti repellat maiores.</p>
+        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis eius debitis nemo mollitia maiores numquam assumenda alias ipsum dignissimos earum, voluptate est itaque reprehenderit, at vel saepe dolor! Voluptates, provident.</p>
+        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis eius debitis nemo mollitia maiores numquam assumenda alias ipsum dignissimos earum, voluptate est itaque reprehenderit, at vel saepe dolor! Voluptates, provident.</p>
+      </div>
+    </section>
 
-          <div class="col s5">
-          <div class="about-img-bg">
-              <img src="images/brian.jpg" alt="brian lynch headshot">
+    <section id="skills-section" class="row">
+      <div class="owl-carousel">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title"><i class="material-icons">add</i></span>
+              <ul>
+                <h6>Frontend</h6>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
             </div>
           </div>
-          <div class=" col s7 about-descr">
-            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quidem in libero ex dolores ea, veniam vitae. Magnam, eligendi, sunt! Voluptatum recusandae magnam nulla debitis, fugit, adipisci corrupti repellat maiores.</p>
-            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis eius debitis nemo mollitia maiores numquam assumenda alias ipsum dignissimos earum, voluptate est itaque reprehenderit, at vel saepe dolor! Voluptates, provident.</p>
-            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis eius debitis nemo mollitia maiores numquam assumenda alias ipsum dignissimos earum, voluptate est itaque reprehenderit, at vel saepe dolor! Voluptates, provident.</p>
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title"><i class="material-icons">add</i></span>
+              <ul>
+                <h6>Backend</h6>
+                <li>Python</li>
+                <li>Flask</li>
+                <li>Django</li>
+              </ul>
+            </div>
           </div>
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title"><i class="material-icons">add</i></span>
+              <ul>
+                <h6>Databases</h6>
+                <li>SQL</li>
+                <li>SQLite</li>
+                <li>MongoDB</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title"><i class="material-icons">add</i></span>
+              <ul>
+                <h6>Version Control</h6>
+                <li>Git</li>
+                <li>Github</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title"><i class="material-icons">add</i></span>
+              <ul>
+                <h6>Delpoyment</h6>
+                <li>Heroku</li>
+                <li>Amazon AWS</li>
+              </ul>
+            </div>
+          </div>
+      </div>
     </section>
-    
-    <div class="section">
 
+    <div class="section">
       <!--   Icon Section   -->
       <div class="row">
         <div class="col s12 m4">
@@ -173,6 +230,8 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
 
 </body>
 

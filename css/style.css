@@ -70,6 +70,7 @@ nav{
     background-size: cover;
 }
 
+
 /*-----  about section  -----*/
 #aboutme-section{
   padding-top: 130px;
@@ -90,3 +91,8 @@ nav{
     object-fit: cover;
 }
 
+
+/*-----  skills section  -----*/
+#skills-section {
+    padding-top: 100px;
+}
