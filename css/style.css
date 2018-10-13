@@ -15,7 +15,6 @@ p {
   min-height: 380px;
   line-height: 0;
   height: auto;
-  color: rgba(255,255,255,.9);
 }
   .parallax-container .section {
     width: 100%;
@@ -95,4 +94,12 @@ nav{
 /*-----  skills section  -----*/
 #skills-section {
     padding-top: 100px;
+}
+
+.row .owl-item .col, .icon-block{
+  padding: 0px;
+}
+.icon-block .light{
+  margin: 0px;
+  font-size: 1.3rem;
 }
