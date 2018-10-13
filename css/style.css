@@ -1,11 +1,3 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
 nav ul a,
 nav .brand-logo {
   color: #444;
@@ -54,4 +46,13 @@ p {
 
 footer.page-footer {
   margin: 0;
+}
+
+/**/
+#hera-image-area {
+    height: 100vh;
+    background-image: url('images/blank-business-clean-891679.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
