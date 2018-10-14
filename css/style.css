@@ -6,15 +6,7 @@ p {
   color: #26a69a;
 }
 
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-}
 
-.parallax-container .section {
-  width: 100%;
-}
 
 @media only screen and (max-width: 992px) {
   .parallax-container .section {
@@ -44,26 +36,23 @@ footer.page-footer {
   margin: 0;
 }
 
+/*------------------------------------------*/
 /*-----  navigation and landing image  -----*/
-
+/*------------------------------------------*/
 .navbar-fixed {
   position: fixed;
 }
-
 nav {
   background-color: transparent;
   box-shadow: 0 0 0px white;
 }
-
 nav .brand-logo, nav ul a{
   color: #000;
 }
-
 .scrolled-navbar {
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
-
 #hera-image-area {
   height: 100vh;
   background-image: url('../images/blank-business-clean-891679.jpg');
@@ -73,8 +62,9 @@ nav .brand-logo, nav ul a{
 }
 
 
+/*---------------------------*/
 /*-----  about section  -----*/
-
+/*---------------------------*/
 #aboutme-section {
   padding-top: 130px;
 }
@@ -94,30 +84,45 @@ nav .brand-logo, nav ul a{
   object-fit: cover;
 }
 
-
+/*----------------------------*/
 /*-----  skills section  -----*/
-
+/*----------------------------*/
 #skills-section {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-
 .row .owl-item .col,
 .icon-block {
   padding: 0px;
 }
-
 .icon-block .light {
   margin: 0px;
   font-size: 1.3rem;
 }
 
-/*-----  projects section  -----*/
+/*------------------------------------*/
+/*-----  parallex image section  -----*/
+/*------------------------------------*/
+.parallax-container {
+  min-height: 50vh;
+  line-height: 0;
+  height: auto;
+}
 
+.parallax-container .section {
+  width: 100%;
+}
+.parallax-container .parallax img{
+  bottom: -176px;
+}
+
+/*------------------------------*/
+/*-----  projects section  -----*/
+/*------------------------------*/
 #projects-section {
   text-align: center;
-  padding-top: 40px;
-  margin-bottom: 75px;
+  padding-top: 60px;
+  margin-bottom: 100px;
 }
 .modal .modal-footer {
   text-align: center;
@@ -177,16 +182,17 @@ nav .brand-logo, nav ul a{
 }
 
 
+/*-----------------------------*/
 /*-----  contact section  -----*/
+/*-----------------------------*/
 #contact-section {
-  background-color: #e6e6e6;
-  padding-bottom: 30px;
-  padding-top: 40px;
+  padding-top: 150px;
+  padding-bottom: 150px;
     margin-bottom: 0px;
 }
 
-#contact-section form{
-      background-color: white;
+#contact-section .contact-form{
+    background-color: white;
     border-radius: 5px;
     overflow: auto;
     padding: 20px;
