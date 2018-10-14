@@ -115,8 +115,17 @@ nav {
 
 /*-----  projects section  -----*/
 
+#projects-section {
+  text-align: center;
+  padding-top: 40px;
+}
 #projects-section ul {
   display: inline-block;
+}
+#projects-section .filter-active {
+    border-bottom: 2px solid;
+    color: #846052;
+    font-weight: 700;
 }
 
 #projects-section ul li {
@@ -128,7 +137,7 @@ nav {
 }
 
 .project-photo {
-    height: 170px;
+    height: 14vw;
     background-image: url(../images/project-dashboard.jpeg);
     background-size: cover;
 }

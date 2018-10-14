@@ -15,10 +15,11 @@ function resizeHeaderOnScroll() {
 window.addEventListener('scroll', resizeHeaderOnScroll);
 
 
-/*
-Function for skills carosel
-*/
 $(document).ready(function() {
+  
+  // ========================================================================= //
+  //  Owl Carousel - carousel for the skill section
+  // ========================================================================= //  
   var owl = $('.owl-carousel');
   owl.owlCarousel({
     loop: true,
@@ -28,9 +29,21 @@ $(document).ready(function() {
     autoplayHoverPause: true,
     responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 } }
   });
-  
-  
+
+  // ========================================================================= //
+  //  filterizr - filtering the portfilio projects
+  // ========================================================================= //  
   var filterizd = $('.filtr-container').filterizr({
-  //options object
-});
+  });
+  
+  // ========================================================================= //
+  //  adding active class to the project filter buttons
+  // ========================================================================= //  
+  $('#project-filters li').on( 'click', function() {
+    $("#project-filters li").removeClass('filter-active');
+    $(this).addClass('filter-active');
+  });
+
+  
+  
 })
