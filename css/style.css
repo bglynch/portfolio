@@ -140,9 +140,9 @@ nav .brand-logo, nav ul a{
 }
 
 .project-photo {
-    height: 14vw;
-    background-size: cover;
-    background-position: top;
+  height: 14vw;
+  background-size: cover;
+  background-position: top;
 }
 #property-dashboard{background-image: url(../images/projects/property-dashboard.jpeg);}
 #project-tracker{background-image: url(../images/projects/project-tracker.png);}
@@ -152,6 +152,30 @@ nav .brand-logo, nav ul a{
 #projects-section  .col {
       padding: 0.75rem 0.75rem;
 }
+.modal{
+  max-height: 80%
+}
+.modal.modal-fixed-footer {
+  height: 80%;
+}
+.modal-content img{
+  margin-bottom: 20px;
+}
+.chip{
+    margin-bottom: 15px;
+    margin-right: 15px
+}
+.modal .modal-footer .btn-flat{
+  background-color: #00000080;
+  color: #ffffff;
+  margin: 6px 10px; 
+}
+.modal .modal-footer .btn-flat:hover{
+  background-color: #000000;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
 
 /*-----  contact section  -----*/
 #contact-section {
