@@ -8,6 +8,7 @@
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
@@ -154,55 +155,59 @@
         </div>
       </div>
     </section>
+  </div>
 
-    <section id="contact-section" class="row">
-      <h2 id="">Contact</h2>
-      <div class="col s12 m6">
-
-      </div>
-      <div class="col s12 m6">
-        <form class="contact-form">
+  <section id="contact-section" class="row">
+    <div class="container">
+      <h2 class="center-align">Get In Touch!</h2>
+      <div class="col s12">
+        <form class="contact-form z-depth-3">
           <div class="row">
-            <div class="input-field col s12">
+            <div class="input-field col s5">
               <i class="material-icons prefix">person</i>
               <input id="name" type="text">
               <label for="first_name">Name</label>
             </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
+            <div class="input-field col offset-s1 s5">
               <i class="material-icons prefix">email</i>
               <input id="email" type="email">
               <label for="email">Email</label>
             </div>
           </div>
-      <div class="row">
-        <div class="input-field col s12">
-         <i class="material-icons prefix grey-text text-darken-2">gesture</i>
-          <input id="icon_subject" type="text" class="validate" required="required">
-          <label for="icon_subject">Subject</label>
-        </div>
-      </div>
           <div class="row">
-            <div class="input-field col s12">
+            <div class="input-field col s11">
+              <i class="material-icons prefix grey-text text-darken-2">gesture</i>
+              <input id="icon_subject" type="text" class="validate" required="required">
+              <label for="icon_subject">Subject</label>
+            </div>
+          </div>
+          <div class="row" style="margin-bottom: 0;">
+            <div class="col input-field s11">
               <i class="material-icons prefix">mode_edit</i>
-              <textarea id="message" class="materialize-textarea"></textarea>
+              <textarea id="message" class="materialize-textarea" required="required"></textarea>
               <label for="message">Message</label>
             </div>
-            <div class="row">
-              <div class="input-field col s12">
-                <button class="btn waves-effect waves-light right" type="submit" name="action">Send
+            <div class="col input-field s11">
+              <button class="btn waves-effect waves-light right" type="submit" name="action" style="background-color: #252525;">Send
                     <i class="material-icons right">send</i>
                 </button>
-              </div>
             </div>
           </div>
         </form>
       </div>
-    </section>
+      <div id="email-social-media" class="col s12 valign-wrapper">
+        <div class="col offset-s1 s7">bglynch17@gmail.com</div>
+        <div class="col s2"><a href="https://www.linkedin.com/in/brian-lynch-b5908655/" target="_blank" class="fab fa-linkedin hoverable"></a></div>
+        <div class="col s2"><a href="https://github.com/bglynch" target="_blank" class="fab fa-github hoverable"></a></div>
+        
+
+        
+        
+      </div>
+    </div>
+  </section>
 
 
-  </div>
 
 
   <div class="parallax-container valign-wrapper">
