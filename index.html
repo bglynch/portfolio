@@ -137,22 +137,98 @@
         <li data-filter="3">Flask</li>
         <li data-filter="4">Django</li>
       </ul>
+      <!--  modals for projects -->
+      <div id="modal1" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <h4>Property Dashboard - South Dublin, Ireland</h4>
+          <p>This website gives a graphical representation of houses for sale in the form of an interactive data dashboard.
+            <br>It allows the user to filter on data points of interest to them.
+            <br>The user can select data in one chart to apply a filter to all charts on the dashboard.</p>
+          <img src="images/projects/property-dashboard.jpeg" class="col offset-s2 s8">
+          <div class="col s12">
+            <div class="chip"><img src="images/logos/python.png" alt="python logo"> Python</div>
+            <div class="chip"><img src="images/logos/beautifulSoup.png" alt="Beautiful Soup logo"> Beautiful Soup</div>
+            <div class="chip"><img src="images/logos/d3.png" alt="d3.js logo"> D3.js</div>
+            <div class="chip"><img src="images/logos/dc.png" alt="dc.js logo"> dc.js</div>
+            <div class="chip">Crossfilter.js</div>
+            <div class="chip"><img src="images/logos/bootstrap.png" alt="Bootstrap4 logo"> Bootstrap4</div>
+            <div class="chip"><img src="images/logos/github.png" alt="github logo">Github Pages</div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="waves-effect waves-green btn-flat">Github Repo</a>
+          <a href="#" class="waves-effect waves-green btn-flat">Live Version</a>
+        </div>
+      </div>
+      <div id="modal2" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <h4>Project Tracker</h4>
+          <p>
+            Project Tracker is a simple, easy to use app for keeping track of small scale projects. It allows the user the ability to create project tasks and give each task a genre. Easch task scan be given a time upon completion which is saved to the database and
+            used for dashboard analysis.</p>
+          <img src="images/projects/project-tracker.png" class="col offset-s2 s8">
+          <div class="col s12">
+            <div class="chip"><img src="images/logos/python.png" alt="python logo"> Python</div>
+            <div class="chip"><img src="images/logos/flask.png" alt="flask Soup logo">Flask</div>
+            <div class="chip"><img src="images/logos/d3.png" alt="d3.js logo"> D3.js</div>
+            <div class="chip"><img src="images/logos/dc.png" alt="dc.js logo"> dc.js</div>
+            <div class="chip">Crossfilter.js</div>
+            <div class="chip"><img src="images/logos/materialize.png" alt="materialize logo">Materalize CSS</div>
+            <div class="chip"><img src="images/logos/sqlite3.png" alt="sqlite3 logo">sqlite3</div>
+            <div class="chip"><img src="images/logos/heroku.png" alt="heroku logo">Heroku</div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="waves-effect waves-green btn-flat">Github Repo</a>
+          <a href="#" class="waves-effect waves-green btn-flat">Live Version</a>
+        </div>
+      </div>
+      <div id="modal3" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <h4>Brian Lynch Portfolio</h4>
+          <p>This is the current website you are viewing</p>
+          <img src="images/projects/brian-portfolio.jpeg" class="col offset-s2 s8">
+          <div class="col s12">
+            <div class="chip"><img src="images/logos/materialize.png" alt="materialize logo"> Materalize</div>
+            <div class="chip"><img src="images/logos/github.png" alt="github logo">Github Pages</div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="waves-effect waves-green btn-flat">Github Repo</a>
+          <a href="#" class="waves-effect waves-green btn-flat">Live Version</a>
+        </div>
+      </div>
+      <div id="modal4" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <h4>Lynch & Associates Consulting Engineers</h4>
+          <p></p>
+          <img src="images/projects/lynch-engineers.jpg" class="col offset-s2 s8">
+          <div class="col s12">
+            <div class="chip"><img src="images/logos/google-maps.jpg" alt="Google Maps logo"> Google Maps API</div>
+            <div class="chip"><img src="images/logos/google-analytics.png" alt="Google Analytics logo">Google Analytics</div>
+            <div class="chip"><img src="images/logos/siteground.png" alt="siteground logo">Siteground Hosting</div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="waves-effect waves-green btn-flat">Live Version</a>
+        </div>
+      </div>
+
+      <!--  END modals for projects -->
       <div class="filtr-container ">
-        <div class="filtr-item col s6 m4" data-category="1" data-sort="value">
-          <section class="project-photo z-depth-1 hoverable"></section>
+        <div class="filtr-item col s6 m4" data-category="1, 2" data-sort="value">
+          <section id="property-dashboard" class="project-photo z-depth-1 hoverable modal-trigger" href="#modal1"></section>
         </div>
-        <div class="filtr-item col s6 m4" data-category="2, 1" data-sort="value">
-          <section class="project-photo z-depth-1 hoverable"></section>
+        <div class="filtr-item col s6 m4" data-category="2, 1, 3" data-sort="value">
+          <section id="project-tracker" class="project-photo z-depth-1 hoverable modal-trigger" href="#modal2"></section>
         </div>
-        <div class="filtr-item col s6 m4" data-category="1, 3" data-sort="value">
-          <section class="project-photo z-depth-1 hoverable"></section>
+        <div class="filtr-item col s6 m4" data-category="" data-sort="value">
+          <section id="brian-portfolio" class="project-photo z-depth-1 hoverable modal-trigger" href="#modal3"></section>
         </div>
-        <div class="filtr-item col s6 m4" data-category="1, 3" data-sort="value">
-          <section class="project-photo z-depth-1 hoverable"></section>
+        <div class="filtr-item col s6 m4" data-category="" data-sort="value">
+          <section id="lynch-engineers" class="project-photo z-depth-1 hoverable modal-trigger" href="#modal4"></section>
         </div>
-        <div class="filtr-item col s6 m4" data-category="1, 3" data-sort="value">
-          <section class="project-photo z-depth-1 hoverable"></section>
-        </div>
+
       </div>
     </section>
   </div>
@@ -199,10 +275,10 @@
         <div class="col offset-s1 s7">bglynch17@gmail.com</div>
         <div class="col s2"><a href="https://www.linkedin.com/in/brian-lynch-b5908655/" target="_blank" class="fab fa-linkedin hoverable"></a></div>
         <div class="col s2"><a href="https://github.com/bglynch" target="_blank" class="fab fa-github hoverable"></a></div>
-        
 
-        
-        
+
+
+
       </div>
     </div>
   </section>

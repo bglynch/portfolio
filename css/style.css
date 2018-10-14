@@ -117,6 +117,10 @@ nav .brand-logo, nav ul a{
 #projects-section {
   text-align: center;
   padding-top: 40px;
+  margin-bottom: 75px;
+}
+.modal .modal-footer {
+  text-align: center;
 }
 #projects-section ul {
   display: inline-block;
@@ -137,9 +141,14 @@ nav .brand-logo, nav ul a{
 
 .project-photo {
     height: 14vw;
-    background-image: url(../images/project-dashboard.jpeg);
     background-size: cover;
+    background-position: top;
 }
+#property-dashboard{background-image: url(../images/projects/property-dashboard.jpeg);}
+#project-tracker{background-image: url(../images/projects/project-tracker.png);}
+#brian-portfolio{background-image: url(../images/projects/brian-portfolio.jpeg);}
+#lynch-engineers{background-image: url(../images/projects/lynch-engineers.jpg);}
+
 #projects-section  .col {
       padding: 0.75rem 0.75rem;
 }
