@@ -28,4 +28,9 @@ $(document).ready(function() {
     autoplayHoverPause: true,
     responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 } }
   });
+  
+  
+  var filterizd = $('.filtr-container').filterizr({
+  //options object
+});
 })
