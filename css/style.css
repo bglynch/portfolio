@@ -226,15 +226,17 @@ nav .brand-logo, nav ul a{
     width:100%;
   }
   /*-----  about  -----*/
-  .about-img-bg img {
-    height: 295px;
-  }
   #aboutme-section {
     padding-top: 70px;
   }
   .about-img-bg {
     border: 16px solid #b8a07e;
-}
+    width: 50vw;
+  }
+  .about-img-bg img {
+    height: 81vw;
+    width: 50vw;
+  }
   /*-----  skills  -----*/
 #skills-section {
     padding-top: 5px;
