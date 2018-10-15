@@ -214,10 +214,6 @@ nav .brand-logo, nav ul a{
 }
 
 
-
-@media only screen and (max-width: 361) {
-}
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   /*-----  general  -----*/
@@ -249,7 +245,10 @@ nav .brand-logo, nav ul a{
     padding-top: 0px;
 }
 .project-photo {
-    height: 40vw;
+    height: 45vw;
+}
+#projects-section .col {
+    padding: 0.75rem 0rem;
 }
   
 } 
