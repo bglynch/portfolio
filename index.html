@@ -237,16 +237,16 @@
     <section id="contact-section" class="row scrollspy">
       <div class="contact-form z-depth-3 ">
         <h2 class="center-align">Get In Touch!</h2>
-        <form class="col s12">
+        <form id="contact-form" class="col s12">
           <div class="row">
             <div class="input-field col s11 m5">
               <i class="material-icons prefix">person</i>
-              <input id="name" type="text">
+              <input id="name" type="text"  required="required">
               <label for="name">Name</label>
             </div>
             <div class="input-field col s11 offset-m1 m5">
               <i class="material-icons prefix">email</i>
-              <input id="email" type="email" class="validate">
+              <input id="email" type="email" class="validate" required="required">
               <label for="email">Email</label>
               <span class="helper-text" data-error="not a valid email" data-success="right"></span>
             </div>
@@ -288,6 +288,12 @@
   <script src="lib/materialize/js/materialize.js"></script>
   <script src="lib/owlcarousel/js/owl.carousel.min.js"></script>
   <script src="lib/filterizer/jquery.filterizr.min.js"></script>
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+  <script type="text/javascript">
+     (function(){
+        emailjs.init("user_HUCw5LFpDsK0pKtz3MaVg");
+     })();
+  </script>
 
   <!--custom-->
   <script src="js/init.js"></script>
