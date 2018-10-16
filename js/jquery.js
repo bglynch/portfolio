@@ -16,8 +16,7 @@ $(document).ready(function() {
   // ========================================================================= //
   //  filterizr - filtering the portfilio projects
   // ========================================================================= //  
-  var filterizd = $('.filtr-container').filterizr({
-  });
+  var filterizd = $('.filtr-container').filterizr({});
   
   // ========================================================================= //
   //  adding active class to the project filter buttons
