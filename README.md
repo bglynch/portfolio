@@ -101,4 +101,4 @@ $ git clone https://github.com/bglynch/portfolio-static-frontend.git
 - The background images used in this site were free stock images obtained from [Pexels](https://www.pexels.com/)
 
 ### Acknowledgements
-- 
+- Template by [Materialize](https://materializecss.com/getting-started.html)
