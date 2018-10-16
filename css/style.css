@@ -47,6 +47,9 @@ nav {
 nav .brand-logo, nav ul a{
   color: #000;
 }
+nav .sidenav-trigger i {
+    color: #795548;
+}
 .scrolled-navbar {
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
@@ -90,6 +93,14 @@ nav .brand-logo, nav ul a{
     position: relative;
     top: 5px;
     left: 5px;
+}
+#aboutme-section a{
+  color: #795548;
+  font-weight: 200;
+}
+#aboutme-section a:hover{
+  color: #795548;
+  font-weight: 600;
 }
 
 /*----------------------------*/
@@ -211,11 +222,35 @@ nav .brand-logo, nav ul a{
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
-    background-color: #ffffff
+    background-color: #ffffff;
+    color: #795548;
 }
 
 #email-social-media {
     padding-top: 40px;
+}
+
+.input-field .prefix.active,
+.input-field > label:not(.label-icon).active,
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #b79f7d;
+}
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #b79f7d;
+  -webkit-box-shadow: 0 1px 0 0 #b79f7d;
+          box-shadow: 0 1px 0 0 #b79f7d;
+}
+
+#my-email {
+    font-family: monospace;
+    font-style: oblique;
+    font-size: 1.3rem;
 }
 
 
