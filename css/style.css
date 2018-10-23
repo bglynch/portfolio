@@ -73,6 +73,15 @@ nav .sidenav-trigger i {
   background-color: rgba(255, 255, 255, 0.76);
 }
 
+#navbar .brand-logo{
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+#navbar .hide-on-small-only {
+    font-weight: 300;
+}
+
 /*---------------------------*/
 /*-----  about section  -----*/
 /*---------------------------*/
