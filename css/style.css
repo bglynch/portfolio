@@ -209,6 +209,10 @@ nav .sidenav-trigger i {
   background-image: url(../images/projects/lynch-engineers.tiny2.jpg);
 }
 
+#wimby {
+  background-image: url(../images/projects/wimby.png);
+}
+
 #projects-section .col {
   padding: 0.75rem 0.75rem;
 }

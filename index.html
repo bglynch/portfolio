@@ -60,12 +60,13 @@
         </div>
       </div>
       <div class="col s12 offset-m1 m6 about-descr">
-        <p>I am a Junior Software Developer experienced in creating both Frontend and Backend Applications. Previously I worked for 5 years as a Civil/Structural engineer in London and Ireland.</p>
-        <p>Recently, I completed Code Institute's 12 week software bootcamp, which is ranked among the top Coding Bootcamps in the world.</p>
-        <p>I have enjjoyed transfering my analytical and problem solving skills for the engineering industray to create useful apps with real world applications</p>
-        <p>Bachelors of Civil/Structural Engineering
-          <br>Diploma in Software Development
-        </p>
+        <p>Software Developer experienced in creating Fullstack Applications . Previously I worked for 5 years as a Civil/Structural engineer in London and Ireland.</p>
+        <p>In 2018, made the carrer switch from Civil Engineering to Software Engineering after completing Code Institute's 12 week software bootcamp.</p>
+        <p>I have enjoyed transfering my analytical and problem solving skills for the engineering industray to create useful apps with real world applications</p>
+        <ul>Qualifications
+          <li>  Bachelors of Civil/Structural Engineering</li>
+          <li>  Diploma in Software Development</li>
+        </ul>
         <a href="cv/brian-lynch-cv.pdf" download="Brian Lynch Resume">Click here to download a copy of my CV<i class="material-icons">file_download</i></a>
       </div>
     </div>
@@ -87,14 +88,16 @@
           <h2 class="brown-text"><i class="material-icons">code</i></h2>
           <h5>Backend</h5>
           <p class="light">Python</p>
-          <p class="light">Flask</p>
-          <p class="light">Django</p>
+          <p class="light">Django/Flask</p>
+          <p class="light">Java</p>
+          <p class="light">Spring Boot</p>
         </div>
         <div class="col s12 center-align icon-block">
           <h2 class="brown-text"><i class="material-icons">settings</i></h2>
           <h5>Databases</h5>
           <p class="light">SQL</p>
           <p class="light">MongoDB</p>
+          <p class="light">PostGIS/Spatialite</p>
         </div>
         <div class="col s12 center-align icon-block">
           <h2 class="brown-text"><i class="material-icons">share</i></h2>
@@ -107,6 +110,7 @@
           <h5>Delpoyment</h5>
           <p class="light">Heroku</p>
           <p class="light">Amazon AWS</p>
+          <p class="light">Travis CI</p>
         </div>
         <div class="col s12 center-align icon-block">
           <h2 class="brown-text"><i class="material-icons">extension</i></h2>
@@ -128,10 +132,10 @@
   <!--  projects section  -->
   <section id="projects-section" class="row scrollspy">
     <div class="container">
-      <h2>My Projects</h2>
+      <h2>Projects</h2>
       <ul id="project-filters">
         <li data-filter="all" class="filter-active">All</li>
-        <li data-filter="1">D3/dc.js</li>
+        <li data-filter="1">dc.js</li>
         <li data-filter="2">Python</li>
         <li data-filter="3">Flask</li>
         <li data-filter="4">Django</li>
@@ -150,9 +154,33 @@
         <div class="filtr-item col s12 m4" data-category="" data-sort="value">
           <section id="lynch-engineers" class="project-photo z-depth-1 hoverable modal-trigger" href="#modal4"></section>
         </div>
+        <div class="filtr-item col s12 m4" data-category="2,4" data-sort="value">
+          <section id="wimby" class="project-photo z-depth-1 hoverable modal-trigger" href="#modal5"></section>
+        </div>
       </div>
       
       <!--  modals for projects -->
+      <div id="modal5" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <h4>WIMBY</h4>
+          <p>A simple, easy to use app for viewing planning applications in your locality.<br> 
+            It allows the user the ability to select a location of his choice(typically the user's home address), and then view on a map, planning applications nearby.</p>
+          <img src="images/projects/wimby.png" class="col offset-s2 s8 z-depth-2" alt="landing page of my data dashboard app">
+          <div class="col s12">
+            <div class="chip"><img src="images/logos/django.png" alt="python logo"> Django</div>
+            <div class="chip"><img src="images/logos/postgis.png" alt="postgig logo"> PostGIS</div>
+            <div class="chip"><img src="images/logos/google-cloud.png" alt="Bootstrap4 logo"> Google OAuth</div>
+            <div class="chip"><img src="images/logos/docker.png" alt="github logo">Docker</div>
+            <div class="chip"><img src="images/logos/aws-s3.png" alt="aws s3 logo"> AWS S3</div>
+            <div class="chip"><img src="images/logos/travis-ci.png" alt="travis ci logo"> Travis CI</div>
+            <div class="chip"><img src="images/logos/heroku.png" alt="heroku logo">Heroku</div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="https://github.com/bglynch/planning-finder" target="_blank" class="waves-effect waves-green btn-flat">Github Repo</a>
+          <a href="https://bglynch-planning-finder.herokuapp.com" target="_blank" class="waves-effect waves-green btn-flat">Live Version</a>
+        </div>
+      </div>
       <div id="modal1" class="modal modal-fixed-footer">
         <div class="modal-content">
           <h4>Property Dashboard - South Dublin, Ireland</h4>
@@ -163,7 +191,6 @@
           <div class="col s12">
             <div class="chip"><img src="images/logos/python.png" alt="python logo"> Python</div>
             <div class="chip"><img src="images/logos/beautifulSoup.png" alt="Beautiful Soup logo"> Beautiful Soup</div>
-            <div class="chip"><img src="images/logos/d3.png" alt="d3.js logo"> D3.js</div>
             <div class="chip"><img src="images/logos/dc.png" alt="dc.js logo"> dc.js</div>
             <div class="chip">Crossfilter.js</div>
             <div class="chip"><img src="images/logos/bootstrap.png" alt="Bootstrap4 logo"> Bootstrap4</div>
@@ -179,13 +206,12 @@
         <div class="modal-content">
           <h4>Project Tracker</h4>
           <p>
-            Project Tracker is a simple, easy to use app for keeping track of small scale projects. It allows the user the ability to create project tasks and give each task a genre. Easch task scan be given a time upon completion which is saved to the database and
+            Project Tracker is a simple, easy to use app for keeping track of small scale projects. It allows the user the ability to create project tasks and give each task a genre. Each task scan be given a time upon completion which is saved to the database and
             used for dashboard analysis.</p>
           <img src="images/projects/project-tracker.tiny.png" class="col offset-s2 s8 z-depth-2">
           <div class="col s12">
             <div class="chip"><img src="images/logos/python.png" alt="python logo"> Python</div>
             <div class="chip"><img src="images/logos/flask.png" alt="flask Soup logo">Flask</div>
-            <div class="chip"><img src="images/logos/d3.png" alt="d3.js logo"> D3.js</div>
             <div class="chip"><img src="images/logos/dc.png" alt="dc.js logo"> dc.js</div>
             <div class="chip">Crossfilter.js</div>
             <div class="chip"><img src="images/logos/materialize.png" alt="materialize logo">Materalize CSS</div>
@@ -229,6 +255,9 @@
       </div>
       <!--  END modals for projects -->
       
+      <h2>Blog</h2>
+      <p>No blog posts yet ...</p>
+
     </div>
   </section>
 
