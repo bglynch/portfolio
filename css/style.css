@@ -213,6 +213,10 @@ nav .sidenav-trigger i {
   background-image: url(../images/projects/wimby.png);
 }
 
+#dc-charts {
+  background-image: url(../images/projects/sample-dc-charts.png);
+}
+
 #projects-section .col {
   padding: 0.75rem 0.75rem;
 }
