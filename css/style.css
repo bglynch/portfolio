@@ -217,6 +217,14 @@ nav .sidenav-trigger i {
   background-image: url(../images/projects/sample-dc-charts.png);
 }
 
+#covid {
+  background-image: url(../images/projects/covid-dashboard.png);
+}
+
+#property-map-dashboard {
+  background-image: url(../images/projects/property-search-dashboard.png);
+}
+
 #projects-section .col {
   padding: 0.75rem 0.75rem;
 }
@@ -371,4 +379,14 @@ textarea.materialize-textarea:focus:not([readonly]) {
   #my-email {
     font-size: 1rem;
   }
+}
+
+/* blog */
+.file-name {
+  text-align: start;
+  font-size: 1.2rem;
+  /* text-decoration: underline; */
+  font-style: italic;
+  letter-spacing: 0.8px;
+  margin-top: 2rem;
 }
