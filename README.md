@@ -4,7 +4,7 @@
 I created this portfolio to share my web development work to date with recruiters, prospective employers and clients. This website showcases a selection of projects I've created so far as well as a list of the tech stack I work with. There is also a brief 'About Me' section, as well as a contact form should someone who is viewing my portfolio want to get in touch. 
 
 ## Demo
-To view a demo of this project, please click [here](https://bglynch.github.io/portfolio-static-frontend/).
+To view a demo of this project, please click [here](https://bglynch.github.io/portfolio/).
 
 ## User Experience
 I created this portfolio with the following list of users and user stories in mind. This allowed me to focus my design and development work on priority features that would be of value to those users:
