@@ -1,3 +1,8 @@
+:root{
+  --primary-color: #795548;
+  --primary-color-light: #b8a07e;
+}
+
 p {
   line-height: 2rem;
 }
@@ -52,7 +57,7 @@ nav ul a {
 }
 
 nav .sidenav-trigger i {
-  color: #795548;
+  color: var(--primary-color);
 }
 
 .scrolled-navbar {
@@ -91,7 +96,7 @@ nav .sidenav-trigger i {
 
 .about-img-bg {
   padding-bottom: 30px;
-  border: 20px solid #b8a07e;
+  border: 20px solid var(--primary-color-light);
   max-width: 310px;
 }
 
@@ -111,12 +116,12 @@ nav .sidenav-trigger i {
 }
 
 #aboutme-section a {
-  color: #795548;
+  color: var(--primary-color);
   font-weight: 200;
 }
 
 #aboutme-section a:hover {
-  color: #795548;
+  color: var(--primary-color);
   font-weight: 600;
 }
 
@@ -131,6 +136,10 @@ nav .sidenav-trigger i {
 .row .owl-item .col,
 .icon-block {
   padding: 0px;
+}
+
+.owl-carousel h2{
+  color: var(--primary-color);
 }
 
 .icon-block .light {
@@ -175,7 +184,7 @@ nav .sidenav-trigger i {
 }
 
 #projects-section .filter-active {
-  color: #846052;
+  color: var(--primary-color);
   font-weight: 800;
 }
 
@@ -191,6 +200,7 @@ nav .sidenav-trigger i {
   height: 14vw;
   background-size: cover;
   background-position: top;
+  cursor: pointer;
 }
 
 #property-dashboard {
@@ -281,7 +291,7 @@ nav .sidenav-trigger i {
   text-decoration: none;
   border-radius: 50%;
   background-color: #ffffff;
-  color: #795548;
+  color: var(--primary-color);
 }
 
 #email-social-media {
