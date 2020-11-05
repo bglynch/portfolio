@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="Description"
+    content="Brian Lynch's portfolio single page application to share my web development work to date with recruiters, prospective employers and clients.">
+  <meta name="theme-color" content="#795548" />
+  <title>Brian Lynch</title>
+
+  <link href="../lib/materialize/css/materialize.css" type="text/css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" rel="stylesheet"
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="stylesheet" href="../lib/prism/prism.css">
+
+  <!--custom-->
+  <link href="../css/style.css" type="text/css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <!--  navigation  -->
+  <!--nav: top-->
+  <div class="navbar-fixed">
+    <nav id="navbar">
+      <div class="navbar-fixed nav-wrapper container">
+        <a href="../index.html" class="brand-logo">Brian Lynch<span class="hide-on-small-only"> | Developer</span></a>
+      </div>
+    </nav>
+  </div>
+
+  <!--  projects section  -->
+  <section id="blog-section" class="row scrollspy">
+    <div class="container">
+
+      <h2 class="left-align">Data Science Project Setup</h2>
+      <img class="responsive-img hero" src="../images/pexels-karolina-grabowska-4207707.jpg">
+      <p class="left-align">
+        In this blog I will describe how to create a template for basic python data science projects.<br>
+        Without a good setup, data science notebooks can become long and unwieldy.
+        Therefore, we will try and setup our project to prevent this from happening.
+        We will also test the flow of out setup but bringing in some test data.
+      </p>
+
+      <p class="left-align">First lets create a directory for our project</p>
+      <pre><code class="language-bash">
+      $ mkdir project
+      $ cd project
+    </code></pre>
+
+      <h4 class="left-align">Setup Virtual Enviornment</h4>
+      <p class="left-align">
+        Create and acticate a virtual enviornment for the poject.<br>
+        Here we will use <a href="https://virtualenv.pypa.io/en/latest/" target="_blank">virtaulenv</a> to create a
+        python 3 virtual enviornment</p>
+      <pre><code class="language-bash">
+      $ virtualenv -p python3 venv
+      $ source venv/bin/activate           # activate the virtaul enviornment
+    </code></pre>
+
+      <h4 class="left-align">Install dependencies</h4>
+      <pre><code class="language-bash">
+      $(venv) pip install pandas
+      $(venv) pip install numpy
+      $(venv) pip install jupyterlab
+      $(venv) pip freeze > requirements.txt
+    </code></pre>
+
+      <h4 class="left-align">Data</h4>
+      <p class="left-align">
+        Create a data directory to store our data as well as a subdirectory to keep unmodified raw data.<br>
+        It's always good practice to keep a copy of your raw data.
+      </p>
+      <pre><code class="language-bash">
+      $(venv) mkdir data
+      $(venv) mkdir data/raw
+      $(venv) touch data/raw.RawData.md
+      </code></pre>
+
+      <h4 class="left-align">Custom Functions</h4>
+      <p class="left-align">
+        We will create a source folder to keep or source code and a test subdirectory to keep our tests.<br>
+        Create placeholder file for custom functions, src/custom_functions.py
+        Create placeholder file for testing custom functions, src/tests/test_custom_functions.py</p>
+      <pre><code class="language-bash">
+      $(venv) mkdir src
+      $(venv) touch src/custom_functions.py
+      $(venv) mkdir src/tests
+      $(venv) touch src/tests/test_custom_functions.py
+      </code></pre>
+
+      <h4 class="left-align">Test Source Code</h4>
+      <h5 class="file-name">src/custom_functions.py</h5>
+      <pre><code class="language-python">
+      def add():
+        return 2
+      </code></pre>
+
+      <h5 class="file-name">src/tests/test_custom_functions.py</h5>
+      <pre><code class="language-python">
+      import unittest
+      import src.custom_functions as cf
+      
+      class MyFirstTests(unittest.TestCase):   
+          def test_add(self):
+              # combine number and letter
+              self.assertEqual(cf.add(),  2)
+      
+      if __name__ == '__main__':
+          unittest.main()
+      </code></pre>
+
+      <p class="left-align">Run test to confirm the connection is working</p>
+      <pre><code class="language-bash">
+      $(venv) python tests/test_custom_functions.py
+      
+      .
+      ----------------------------------------------------------------------
+      Ran 1 test in 0.000s
+
+      OK
+      </code></pre>
+
+      <h4 class="left-align">Access Funcitons from Notebook</h4>
+      <p class="left-align">Access custom functions from Notebook to confirm connection</p>
+      <img class="responsive-img" src="../images/blog/data-science-template.png">
+
+      <h4 class="left-align">Enviornmental Variables</h4>
+      <p class="left-align">
+        We will use the python decouple package to store our enviornment variables.
+      </p>
+      <pre><code class="language-bash">
+      $(venv) pip install python-decouple
+      $(venv) touch .env
+      $(venv) echo .env >> .gitignore
+      $(venv) pip freeze > requirements.txt
+    </code></pre>
+      <p class="left-align">Add a dummy enviornment variable to test conectivity</p>
+      <h5 class="file-name">.env</h5>
+      <pre><code class="language-yaml">
+      TEST_ENV="hello world"
+    </code></pre>
+      <p class="left-align">Access the variable from the notebook</p>
+      <img class="responsive-img" src="../images/blog/data-science-template-2.png">
+
+
+
+      <h4 class="left-align">Folder Structure</h4>
+      <pre><code class="language-bash">
+    .
+    ├── data
+    │   └── raw
+    │       └── DataInfo.md
+    ├── notebooks
+    │   └── Untitled.ipynb
+    ├── src
+    │   ├── custom_functions.py
+    │   └── tests
+    │       └── test_custom_functions.py
+    ├── venv
+    ├── requirements.txt
+    ├── .gitignore
+    ├── .env
+    └── README.md
+    </code></pre>
+
+    <h4 class="left-align">Setup Complete!</h4>
+    <p  class="left-align">
+      Now we have a solid base from which to start our data science project.<br>
+      We have:
+      <ul>
+        <li>a virtual enviornment</li>
+        <li>a place for our data, both raw and processed</li>
+        <li>a place for custom code, as well as tests for same</li>
+        <li>a place for our notebooks</li>
+        <li>a place to store envionment variables</li>
+      </ul>
+    </p>
+
+
+    </div>
+  </section>
+
+
+  <!-- Scripts -->
+  <!--libraries-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../lib/materialize/js/materialize.js"></script>
+  <script src="../lib/prism/prism.js"></script>
+  <script type="text/javascript">
+    // Optional
+    Prism.plugins.NormalizeWhitespace.setDefaults({
+      'remove-trailing': true,
+      'remove-indent': true,
+      'left-trim': true,
+      'right-trim': true,
+    });
+  </script>
+
+  <!--custom-->
+  <script src="../js/init.js"></script>
+  <script src="../js/custom.js"></script>
+  <script src="../js/jquery.js"></script>
+</body>
+
+</html>
