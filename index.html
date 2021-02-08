@@ -1,136 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="Description" content="Brian Lynch's portfolio single page application to share my web development work to date with recruiters, prospective employers and clients.">
-  <meta name="theme-color" content="#795548"/>
+  <meta name="Description"
+    content="Brian Lynch's portfolio single page application to share my web development work to date with recruiters, prospective employers and clients.">
+  <meta name="theme-color" content="#795548" />
   <title>Brian Lynch</title>
 
   <!-- Stylesheets -->
   <!--libraries-->
   <!--materialize-->
-  <link href="lib/materialize/css/materialize.css" type="text/css" rel="stylesheet"/>
+  <link href="lib/materialize/css/materialize.css" type="text/css" rel="stylesheet" />
   <!--fonts-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" rel="stylesheet" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-  <!-- Owl Carousel-->
-  <link rel="stylesheet" href="lib/owlcarousel/css/owl.carousel.min.css">
+  <link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" rel="stylesheet"
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
   <!--custom-->
-  <link href="css/style.css" type="text/css" rel="stylesheet"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
 
 </head>
-
 <body>
   <!--  navigation  -->
   <!--nav: top-->
-  <div class="navbar-fixed">
+  <header class="navbar-fixed">
     <nav id="navbar">
       <div class="navbar-fixed nav-wrapper container">
-        <a href="#!" class="brand-logo">Brian Lynch<span class="hide-on-small-only"> | Developer</span></a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#aboutme-section">About</a></li>
-          <li><a href="#skills-section">Skills</a></li>
-          <li><a href="#projects-section">Portfolio</a></li>
-          <li><a href="#contact-section">Contact</a></li>
-        </ul>
+        <a href="#!" class="brand-logo">Brian Lynch<span class="hide-on-small-only"> | Software Developer</span></a>
       </div>
     </nav>
-  </div>
-  <!--nav: side-->
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="#aboutme-section">About</a></li>
-    <li><a href="#skills-section">Skills</a></li>
-    <li><a href="#projects-section">Portfolio</a></li>
-    <li><a href="#contact-section">Contact</a></li>
-  </ul>
+  </header>
 
   <!--  landing hero image  -->
-  <div id="hera-image-area"></div>
-
-  <!--  about me section -->
-  <section id="aboutme-section" class="row scrollspy">
-    <div class="container">
-      <div class="col s10 m5">
-        <div class="about-img-bg">
-          <img src="images/brian.tiny.jpg" alt="brian lynch headshot">
-        </div>
-      </div>
-      <div class="col s12 offset-m1 m6 about-descr">
-        <p>Software Developer experienced in creating Fullstack Applications . Previously I worked for 5 years as a Civil/Structural engineer in London and Ireland.</p>
-        <p>In 2018, made the eer switch from Civil Engineering to Software Engineering after completing Code Institute's 12 week software bootcamp.</p>
-        <p>I have enjoyed transfering my analytical and problem solving skills for the engineering industray to create useful apps with real world applications</p>
-        <ul>Qualifications
-          <li>  Bachelors of Civil/Structural Engineering</li>
-          <li>  Diploma in Software Development</li>
-        </ul>
-        <a href="cv/brian-lynch-cv.pdf" download="Brian Lynch Resume">Click here to download a copy of my CV<i class="material-icons">file_download</i></a>
-      </div>
-    </div>
-  </section>
-
-  <!--  skills section  -->
-  <section id="skills-section" class="row scrollspy">
-    <div class="container">
-      <div class="owl-carousel">
-        <div class="col s12 center-align icon-block">
-          <h2 class="center"><i class="material-icons">flash_on</i></h2>
-          <h5>Frontend</h5>
-          <p class="light">HTML</p>
-          <p class="light">CSS</p>
-          <p class="light">Javascript</p>
-          <p class="light">jQuery</p>
-        </div>
-        <div class="col s12 center-align icon-block">
-          <h2 class=""><i class="material-icons">code</i></h2>
-          <h5>Backend</h5>
-          <p class="light">Python</p>
-          <p class="light">Django/Flask</p>
-          <p class="light">Java</p>
-          <p class="light">Spring Boot</p>
-        </div>
-        <div class="col s12 center-align icon-block">
-          <h2 class=""><i class="material-icons">settings</i></h2>
-          <h5>Databases</h5>
-          <p class="light">SQL</p>
-          <p class="light">MongoDB</p>
-          <p class="light">PostGIS/Spatialite</p>
-        </div>
-        <div class="col s12 center-align icon-block">
-          <h2 class=""><i class="material-icons">share</i></h2>
-          <h5>Version Control</h5>
-          <p class="light">Git</p>
-          <p class="light">Github</p>
-        </div>
-        <div class="col s12 center-align icon-block">
-          <h2 class="center"><i class="material-icons">filter_drama</i></h2>
-          <h5>Delpoyment</h5>
-          <p class="light">Heroku</p>
-          <p class="light">Amazon AWS</p>
-          <p class="light">Travis CI</p>
-        </div>
-        <div class="col s12 center-align icon-block">
-          <h2 class=""><i class="material-icons">extension</i></h2>
-          <h5>Soft Skills</h5>
-          <p class="light">Teamwork</p>
-          <p class="light">Problem Solving</p>
-          <p class="light">Communication</p>
-          <p class="light">Adaptability</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--  dividing parallax image  -->
-  <div class="parallax-container valign-wrapper">
-    <div class="parallax"><img src="images/parallex1.tiny.jpg" alt="sandstone background"></div>
-  </div>
+  <section id="hera-image-area"></section>
 
   <!--  projects section  -->
-  <section id="projects-section" class="row scrollspy">
+  <main class="row">
     <div class="container">
       <h2>Projects</h2>
       <ul id="project-filters">
@@ -140,16 +46,13 @@
         <li data-filter="3">Java</li>
         <li data-filter="4">Docker</li>
       </ul>
-      
+
       <div class="filtr-container ">
         <div class="filtr-item col s12 m4" data-category="1, 2" data-sort="value">
           <section id="property-dashboard" class="project-photo z-depth-1 hoverable modal-trigger" href="#modal1"></section>
         </div>
         <div class="filtr-item col s12 m4" data-category="1,2" data-sort="value">
           <section id="project-tracker" class="project-photo z-depth-1 hoverable modal-trigger" href="#modal2"></section>
-        </div>
-        <div class="filtr-item col s12 m4" data-category="" data-sort="value">
-          <section id="brian-portfolio" class="project-photo z-depth-1 hoverable modal-trigger" href="#modal3"></section>
         </div>
         <div class="filtr-item col s12 m4" data-category="" data-sort="value">
           <section id="lynch-engineers" class="project-photo z-depth-1 hoverable modal-trigger" href="#modal4"></section>
@@ -167,208 +70,192 @@
           <section id="property-map-dashboard" class="project-photo z-depth-1 hoverable modal-trigger" href="#modal8"></section>
         </div>
       </div>
-      
-      <!--  modals for projects -->
-      <div id="modal5" class="modal modal-fixed-footer">
-        <div class="modal-content">
-          <h4>WIMBY</h4>
-          <p>A simple, easy to use app for viewing planning applications in your locality.<br> 
-            It allows the user the ability to select a location of his choice(typically the user's home address), and then view on a map, planning applications nearby.</p>
-          <img src="images/projects/wimby.png" class="col offset-s2 s8 z-depth-2" alt="landing page of my data dashboard app">
-          <div class="col s12">
-            <div class="chip"><img src="images/logos/django.png" alt="python logo"> Django</div>
-            <div class="chip"><img src="images/logos/postgis.png" alt="postgig logo"> PostGIS</div>
-            <div class="chip"><img src="images/logos/google-cloud.png" alt="Bootstrap4 logo"> Google OAuth</div>
-            <div class="chip"><img src="images/logos/docker.png" alt="github logo">Docker</div>
-            <div class="chip"><img src="images/logos/aws-s3.png" alt="aws s3 logo"> AWS S3</div>
-            <div class="chip"><img src="images/logos/travis-ci.png" alt="travis ci logo"> Travis CI</div>
-            <div class="chip"><img src="images/logos/heroku.png" alt="heroku logo">Heroku</div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <a href="https://github.com/bglynch/planning-finder" target="_blank" class="waves-effect waves-green btn-flat">Github Repo</a>
-          <a href="https://bglynch-planning-finder.herokuapp.com" target="_blank" class="waves-effect waves-green btn-flat">Live Version</a>
-        </div>
-      </div>
-      <div id="modal1" class="modal modal-fixed-footer">
-        <div class="modal-content">
-          <h4>Property Dashboard - South Dublin, Ireland</h4>
-          <p>This website gives a graphical representation of houses for sale in the form of an interactive data dashboard.
-            <br>It allows the user to filter on data points of interest to them.
-            <br>The user can select data in one chart to apply a filter to all charts on the dashboard.</p>
-          <img src="images/projects/property-dashboard.tiny2.jpeg" class="col offset-s2 s8 z-depth-2" alt="landing page of my data dashboard app">
-          <div class="col s12">
-            <div class="chip"><img src="images/logos/python.png" alt="python logo"> Python</div>
-            <div class="chip"><img src="images/logos/beautifulSoup.png" alt="Beautiful Soup logo"> Beautiful Soup</div>
-            <div class="chip"><img src="images/logos/dc.png" alt="dc.js logo"> dc.js</div>
-            <div class="chip">Crossfilter.js</div>
-            <div class="chip"><img src="images/logos/bootstrap.png" alt="Bootstrap4 logo"> Bootstrap4</div>
-            <div class="chip"><img src="images/logos/github.png" alt="github logo">Github Pages</div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <a href="https://github.com/bglynch/property-dashboard" target="_blank" class="waves-effect waves-green btn-flat">Github Repo</a>
-          <a href="https://bglynch.github.io/property-dashboard/" target="_blank" class="waves-effect waves-green btn-flat">Live Version</a>
-        </div>
-      </div>
-      <div id="modal2" class="modal modal-fixed-footer">
-        <div class="modal-content">
-          <h4>Project Tracker</h4>
-          <p>
-            Project Tracker is a simple, easy to use app for keeping track of small scale projects. It allows the user the ability to create project tasks and give each task a genre. Each task scan be given a time upon completion which is saved to the database and
-            used for dashboard analysis.</p>
-          <img src="images/projects/project-tracker.tiny.png" class="col offset-s2 s8 z-depth-2">
-          <div class="col s12">
-            <div class="chip"><img src="images/logos/python.png" alt="python logo"> Python</div>
-            <div class="chip"><img src="images/logos/flask.png" alt="flask Soup logo">Flask</div>
-            <div class="chip"><img src="images/logos/dc.png" alt="dc.js logo"> dc.js</div>
-            <div class="chip"><img src="images/logos/materialize.png" alt="materialize logo">Materalize CSS</div>
-            <div class="chip"><img src="images/logos/sqlite3.png" alt="sqlite3 logo">sqlite3</div>
-            <div class="chip"><img src="images/logos/heroku.png" alt="heroku logo">Heroku</div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <a href="https://github.com/bglynch/project-tracker-flask" target="_blank" class="waves-effect waves-green btn-flat">Github Repo</a>
-          <a href="http://bglynch-project-tracker.herokuapp.com/" target="_blank" class="waves-effect waves-green btn-flat">Live Version</a>
-        </div>
-      </div>
-      <div id="modal3" class="modal modal-fixed-footer">
-        <div class="modal-content">
-          <h4>Brian Lynch Portfolio</h4>
-          <p>This is the current website you are viewing</p>
-          <img src="images/projects/brian-portfolio.tiny2.jpeg" class="col offset-s2 s8 z-depth-2" alt="landing page of this portfolio website">
-          <div class="col s12">
-            <div class="chip"><img src="images/logos/materialize.png" alt="materialize logo"> Materalize</div>
-            <div class="chip"><img src="images/logos/github.png" alt="github logo">Github Pages</div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <a href="https://github.com/bglynch/portfolio-static-frontend" target="_blank" class="waves-effect waves-green btn-flat">Github Repo</a>
-        </div>
-      </div>
-      <div id="modal4" class="modal modal-fixed-footer">
-        <div class="modal-content">
-          <h4>Lynch & Associates Consulting Engineers</h4>
-          <p></p>
-          <img src="images/projects/lynch-engineers.tiny2.jpg" class="col offset-s2 s8 z-depth-2" alt="landing page of lynch consulting engineers website">
-          <div class="col s12">
-            <div class="chip"><img src="images/logos/google-maps.jpg" alt="Google Maps logo"> Google Maps API</div>
-            <div class="chip"><img src="images/logos/google-analytics.png" alt="Google Analytics logo">Google Analytics</div>
-            <div class="chip"><img src="images/logos/siteground.png" alt="siteground logo">Siteground Hosting</div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <a href="http://lynchconsultingengineers.com" target="_blank" class="waves-effect waves-green btn-flat">Live Version</a>
-        </div>
-      </div>
-      <div id="modal6" class="modal modal-fixed-footer">
-        <div class="modal-content">
-          <h4>Sample DC.js Charts</h4>
-          <p>Library of dc.js code snippets with accompanying charts</p>
-          <img src="images/projects/sample-dc-charts.png" class="col offset-s2 s8 z-depth-2" alt="landing page of sample-dc-charts">
-          <div class="col s12">
-            <div class="chip"><img src="images/logos/dc.png" alt="dc.js logo"> dc.js</div>
-            <div class="chip"><img src="images/logos/lektor.png" alt="Lektor logo">Lektor</div>
-            <div class="chip"><img src="images/logos/netlify.svg" alt="Netlify logo">Netlify</div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <a href="https://github.com/bglynch/sample-charts-dc" target="_blank" class="waves-effect waves-green btn-flat">Github Repo</a>
-          <a href="https://bglynch-dc-charts.netlify.app/" target="_blank" class="waves-effect waves-green btn-flat">Live Version</a>
-        </div>
-      </div>
-      <div id="modal7" class="modal modal-fixed-footer">
-        <div class="modal-content">
-          <h4>Covid 19 Dashboard</h4>
-          <p>Interactive dashboard created using opensource data.</p>
-          <p style="color: red;">Dashboard is now only showing historic data stopping on July 25th</p>
-          <img src="images/projects/covid-dashboard.png" class="col offset-s2 s8 z-depth-2" alt="landing page of covid">
-          <div class="col s12">
-            <div class="chip"><img src="images/logos/dc.png" alt="dc.js logo"> dc.js</div>
-            <div class="chip"><img src="images/logos/netlify.svg" alt="Netlify logo">Netlify</div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <a href="https://github.com/bglynch/covid19-ireland" target="_blank" class="waves-effect waves-green btn-flat">Github Repo</a>
-          <a href="https://ireland-covid19.netlify.app/" target="_blank" class="waves-effect waves-green btn-flat">Live Version</a>
-        </div>
-      </div>
-      <div id="modal8" class="modal modal-fixed-footer">
-        <div class="modal-content">
-          <h4>Dublin Property Search Dashboard</h4>
-          <p>Data scraped from a popular property site using Java and Jsoup. Dashboard gives the user the ability to find a desired property by filtering the data by clicking on the charts.</p>
-          <p style="color: red;">Dashboard is now only showing historic data from August 2019</p>
-          <img src="images/projects/property-search-dashboard.png" class="col offset-s2 s8 z-depth-2" alt="landing page of covid">
-          <div class="col s12">
-            <div class="chip"><img src="images/logos/dc.png" alt="dc.js logo">dc.js</div>
-            <div class="chip"><img src="images/logos/java.png" alt="dc.js logo">Java</div>
-            <div class="chip">Jsoup</div>
-            <div class="chip"><img src="images/logos/github.png" alt="Netlify logo">Github Pages</div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <a href="https://bglynch.github.io/house-vis/" target="_blank" class="waves-effect waves-green btn-flat">Live Version</a>
-        </div>
-      </div>
-      <!--  END modals for projects -->
-      
+
       <h2>Blog</h2>
-      <p>
-        <h5><a href="blog/data-science-setup.html" target="_blank">Data Science Project Setup</a></h5> - A Basic setup for data science projects
-      </p>
+      <article>
+        <h6 class="left-align"><a class="left-align" href="blog/data-science-setup.html">Data Science Project Setup</a> - A Basic setup for data science projects</h6>
+        <p>Python, Jupyter Notebook  |  12-12-21</p>
+      </article>
 
+      <h2 style="margin-bottom: 0px;">Contact</h2>
+      <article class="col s8">
+        <div>bglynch17@gmail.com</div>
+        <div><a href="https://www.linkedin.com/in/brian-lynch-b5908655/" target="_blank" class="fab fa-linkedin hoverable"></a></div>
+        <div><a href="https://github.com/bglynch" target="_blank" class="fab fa-github hoverable"></a>
+      </article>
     </div>
-  </section>
-
-  <!--  contact section -->
-  <div class="parallax-container valign-wrapper">
-    <section id="contact-section" class="row container scrollspy">
-      <div class="contact-form z-depth-3 ">
-        <h2 class="center-align">Get In Touch!</h2>
-        <form id="contact-form" class="col s12">
-          <div class="row">
-            <div class="input-field col s11 m5">
-              <i class="material-icons prefix">person</i>
-              <input id="name" type="text"  required="required">
-              <label for="name">Name</label>
-            </div>
-            <div class="input-field col s11 offset-m1 m5">
-              <i class="material-icons prefix">email</i>
-              <input id="email" type="email" class="validate" required="required">
-              <label for="email">Email</label>
-              <span class="helper-text" data-error="not a valid email" data-success="right"></span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s11">
-              <i class="material-icons prefix grey-text text-darken-2">gesture</i>
-              <input id="icon_subject" type="text" class="validate" required="required">
-              <label for="icon_subject">Subject</label>
-              <span class="helper-text" data-error="do not leave blank" data-success="right"></span>
-            </div>
-          </div>
-          <div class="row" style="margin-bottom: 0;">
-            <div class="col input-field s11">
-              <i class="material-icons prefix">mode_edit</i>
-              <textarea id="message" class="materialize-textarea" required="required"></textarea>
-              <label for="message">Message</label>
-            </div>
-            <div class="col input-field s11">
-              <button class="btn waves-effect waves-light right" type="submit" name="action" style="background-color: #252525;">Send
-                    <i class="material-icons right">send</i>
-                </button>
-            </div>
-          </div>
-        </form>
-        <div id="email-social-media" class="col s12 valign-wrapper">
-          <div id="my-email" class="col offset-s1 s7">bglynch17@gmail.com</div>
-          <div class="col s2"><a href="https://www.linkedin.com/in/brian-lynch-b5908655/" target="_blank" class="fab fa-linkedin hoverable"></a></div>
-          <div class="col s2"><a href="https://github.com/bglynch" target="_blank" class="fab fa-github hoverable"></a></div>
-        </div>
+  </main>
+  
+  <!--  modals for projects -->
+  <div id="modal5" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>WIMBY</h4>
+      <p>A simple, easy to use app for viewing planning applications in your locality.<br>
+        It allows the user the ability to select a location of his choice(typically the user's home address), and
+        then view on a map, planning applications nearby.</p>
+      <img src="images/projects/wimby.png" class="col offset-s2 s8 z-depth-2"
+        alt="landing page of my data dashboard app">
+      <div class="col s12">
+        <div class="chip"><img src="images/logos/django.png" alt="python logo"> Django</div>
+        <div class="chip"><img src="images/logos/postgis.png" alt="postgig logo"> PostGIS</div>
+        <div class="chip"><img src="images/logos/google-cloud.png" alt="Bootstrap4 logo"> Google OAuth</div>
+        <div class="chip"><img src="images/logos/docker.png" alt="github logo">Docker</div>
+        <div class="chip"><img src="images/logos/aws-s3.png" alt="aws s3 logo"> AWS S3</div>
+        <div class="chip"><img src="images/logos/travis-ci.png" alt="travis ci logo"> Travis CI</div>
+        <div class="chip"><img src="images/logos/heroku.png" alt="heroku logo">Heroku</div>
       </div>
-    </section>
-    <div class="parallax"><img src="images/parallex2.tiny.jpeg" alt="background image lightbulb"></div>
+    </div>
+    <div class="modal-footer">
+      <a href="https://github.com/bglynch/planning-finder" target="_blank"
+        class="waves-effect waves-green btn-flat">Github Repo</a>
+      <a href="https://bglynch-planning-finder.herokuapp.com" target="_blank"
+        class="waves-effect waves-green btn-flat">Live Version</a>
+    </div>
   </div>
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Property Dashboard - South Dublin, Ireland</h4>
+      <p>This website gives a graphical representation of houses for sale in the form of an interactive data
+        dashboard.
+        <br>It allows the user to filter on data points of interest to them.
+        <br>The user can select data in one chart to apply a filter to all charts on the dashboard.
+      </p>
+      <img src="images/projects/property-dashboard.tiny2.jpeg" class="col offset-s2 s8 z-depth-2"
+        alt="landing page of my data dashboard app">
+      <div class="col s12">
+        <div class="chip"><img src="images/logos/python.png" alt="python logo"> Python</div>
+        <div class="chip"><img src="images/logos/beautifulSoup.png" alt="Beautiful Soup logo"> Beautiful Soup</div>
+        <div class="chip"><img src="images/logos/dc.png" alt="dc.js logo"> dc.js</div>
+        <div class="chip">Crossfilter.js</div>
+        <div class="chip"><img src="images/logos/bootstrap.png" alt="Bootstrap4 logo"> Bootstrap4</div>
+        <div class="chip"><img src="images/logos/github.png" alt="github logo">Github Pages</div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="https://github.com/bglynch/property-dashboard" target="_blank"
+        class="waves-effect waves-green btn-flat">Github Repo</a>
+      <a href="https://bglynch.github.io/property-dashboard/" target="_blank"
+        class="waves-effect waves-green btn-flat">Live Version</a>
+    </div>
+  </div>
+  <div id="modal2" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Project Tracker</h4>
+      <p>
+        Project Tracker is a simple, easy to use app for keeping track of small scale projects. It allows the user
+        the ability to create project tasks and give each task a genre. Each task scan be given a time upon
+        completion which is saved to the database and
+        used for dashboard analysis.</p>
+      <img src="images/projects/project-tracker.tiny.png" class="col offset-s2 s8 z-depth-2">
+      <div class="col s12">
+        <div class="chip"><img src="images/logos/python.png" alt="python logo"> Python</div>
+        <div class="chip"><img src="images/logos/flask.png" alt="flask Soup logo">Flask</div>
+        <div class="chip"><img src="images/logos/dc.png" alt="dc.js logo"> dc.js</div>
+        <div class="chip"><img src="images/logos/materialize.png" alt="materialize logo">Materalize CSS</div>
+        <div class="chip"><img src="images/logos/sqlite3.png" alt="sqlite3 logo">sqlite3</div>
+        <div class="chip"><img src="images/logos/heroku.png" alt="heroku logo">Heroku</div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="https://github.com/bglynch/project-tracker-flask" target="_blank"
+        class="waves-effect waves-green btn-flat">Github Repo</a>
+      <a href="http://bglynch-project-tracker.herokuapp.com/" target="_blank"
+        class="waves-effect waves-green btn-flat">Live Version</a>
+    </div>
+  </div>
+  <div id="modal3" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Brian Lynch Portfolio</h4>
+      <p>This is the current website you are viewing</p>
+      <img src="images/projects/brian-portfolio.tiny2.jpeg" class="col offset-s2 s8 z-depth-2"
+        alt="landing page of this portfolio website">
+      <div class="col s12">
+        <div class="chip"><img src="images/logos/materialize.png" alt="materialize logo"> Materalize</div>
+        <div class="chip"><img src="images/logos/github.png" alt="github logo">Github Pages</div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="https://github.com/bglynch/portfolio-static-frontend" target="_blank"
+        class="waves-effect waves-green btn-flat">Github Repo</a>
+    </div>
+  </div>
+  <div id="modal4" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Lynch & Associates Consulting Engineers</h4>
+      <p></p>
+      <img src="images/projects/lynch-engineers.tiny2.jpg" class="col offset-s2 s8 z-depth-2"
+        alt="landing page of lynch consulting engineers website">
+      <div class="col s12">
+        <div class="chip"><img src="images/logos/google-maps.jpg" alt="Google Maps logo"> Google Maps API</div>
+        <div class="chip"><img src="images/logos/google-analytics.png" alt="Google Analytics logo">Google Analytics
+        </div>
+        <div class="chip"><img src="images/logos/siteground.png" alt="siteground logo">Siteground Hosting</div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="http://lynchconsultingengineers.com" target="_blank" class="waves-effect waves-green btn-flat">Live
+        Version</a>
+    </div>
+  </div>
+  <div id="modal6" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Sample DC.js Charts</h4>
+      <p>Library of dc.js code snippets with accompanying charts</p>
+      <img src="images/projects/sample-dc-charts.png" class="col offset-s2 s8 z-depth-2"
+        alt="landing page of sample-dc-charts">
+      <div class="col s12">
+        <div class="chip"><img src="images/logos/dc.png" alt="dc.js logo"> dc.js</div>
+        <div class="chip"><img src="images/logos/lektor.png" alt="Lektor logo">Lektor</div>
+        <div class="chip"><img src="images/logos/netlify.svg" alt="Netlify logo">Netlify</div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="https://github.com/bglynch/sample-charts-dc" target="_blank"
+        class="waves-effect waves-green btn-flat">Github Repo</a>
+      <a href="https://bglynch-dc-charts.netlify.app/" target="_blank"
+        class="waves-effect waves-green btn-flat">Live Version</a>
+    </div>
+  </div>
+  <div id="modal7" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Covid 19 Dashboard</h4>
+      <p>Interactive dashboard created using opensource data.</p>
+      <p style="color: red;">Dashboard is now only showing historic data stopping on July 25th</p>
+      <img src="images/projects/covid-dashboard.png" class="col offset-s2 s8 z-depth-2" alt="landing page of covid">
+      <div class="col s12">
+        <div class="chip"><img src="images/logos/dc.png" alt="dc.js logo"> dc.js</div>
+        <div class="chip"><img src="images/logos/netlify.svg" alt="Netlify logo">Netlify</div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="https://github.com/bglynch/covid19-ireland" target="_blank"
+        class="waves-effect waves-green btn-flat">Github Repo</a>
+      <a href="https://ireland-covid19.netlify.app/" target="_blank" class="waves-effect waves-green btn-flat">Live
+        Version</a>
+    </div>
+  </div>
+  <div id="modal8" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Dublin Property Search Dashboard</h4>
+      <p>Data scraped from a popular property site using Java and Jsoup. Dashboard gives the user the ability to
+        find a desired property by filtering the data by clicking on the charts.</p>
+      <p style="color: red;">Dashboard is now only showing historic data from August 2019</p>
+      <img src="images/projects/property-search-dashboard.png" class="col offset-s2 s8 z-depth-2"
+        alt="landing page of covid">
+      <div class="col s12">
+        <div class="chip"><img src="images/logos/dc.png" alt="dc.js logo">dc.js</div>
+        <div class="chip"><img src="images/logos/java.png" alt="dc.js logo">Java</div>
+        <div class="chip">Jsoup</div>
+        <div class="chip"><img src="images/logos/github.png" alt="Netlify logo">Github Pages</div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="https://bglynch.github.io/house-vis/" target="_blank" class="waves-effect waves-green btn-flat">Live
+        Version</a>
+    </div>
+  </div>
+  <!--  END modals for projects -->
+
 
   <!-- Scripts -->
   <!--libraries-->
@@ -376,12 +263,6 @@
   <script src="lib/materialize/js/materialize.js"></script>
   <script src="lib/owlcarousel/js/owl.carousel.min.js"></script>
   <script src="lib/filterizer/jquery.filterizr.min.js"></script>
-  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
-  <script type="text/javascript">
-     (function(){
-        emailjs.init("user_HUCw5LFpDsK0pKtz3MaVg");
-     })();
-  </script>
 
   <!--custom-->
   <script src="js/init.js"></script>

@@ -1,10 +1,25 @@
 :root{
-  --primary-color: #795548;
+  --primary-color: #1775b6;
   --primary-color-light: #b8a07e;
 }
 
 p {
   line-height: 2rem;
+}
+h2{
+  font-size: 24px;
+  line-height: 36px;
+  text-align: left;
+  margin: 100px 0px 30px 0px;
+}
+article{
+display: flex;
+flex-direction: row;
+align-items: baseline;
+justify-content: space-between;
+}
+article h6, article p{
+  margin: 0px;
 }
 
 .sidenav-trigger {
@@ -87,91 +102,9 @@ nav .sidenav-trigger i {
     font-weight: 300;
 }
 
-/*---------------------------*/
-/*-----  about section  -----*/
-/*---------------------------*/
-#aboutme-section {
-  padding-top: 130px;
-}
 
-.about-img-bg {
-  padding-bottom: 30px;
-  border: 20px solid var(--primary-color-light);
-  max-width: 310px;
-}
-
-.about-img-bg img {
-  width: 100%;
-  box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
-  margin-top: -60px;
-  margin-left: 40px;
-  height: 435px;
-  object-fit: cover;
-}
-
-#aboutme-section .material-icons {
-  position: relative;
-  top: 5px;
-  left: 5px;
-}
-
-#aboutme-section a {
-  color: var(--primary-color);
-  font-weight: 200;
-}
-
-#aboutme-section a:hover {
-  color: var(--primary-color);
-  font-weight: 600;
-}
-
-/*----------------------------*/
-/*-----  skills section  -----*/
-/*----------------------------*/
-#skills-section {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.row .owl-item .col,
-.icon-block {
-  padding: 0px;
-}
-
-.owl-carousel h2{
-  color: var(--primary-color);
-}
-
-.icon-block .light {
-  margin: 0px;
-  font-size: 1.3rem;
-}
-
-/*------------------------------------*/
-/*-----  parallex image section  -----*/
-/*------------------------------------*/
-
-.parallax-container {
-  min-height: 50vh;
-  line-height: 0;
-  height: auto;
-}
-
-.parallax-container .section {
-  width: 100%;
-}
-
-.parallax-container .parallax img {
-  height: 100vh;
-}
-
-/*------------------------------*/
-/*-----  projects section  -----*/
-/*------------------------------*/
-
-#projects-section {
+main {
   text-align: center;
-  padding-top: 60px;
   margin-bottom: 100px;
 }
 
@@ -179,21 +112,26 @@ nav .sidenav-trigger i {
   text-align: center;
 }
 
-#projects-section ul {
-  display: inline-block;
+main ul {
+  display: block;
+  padding: 10px
 }
 
-#projects-section .filter-active {
+main .filter-active {
   color: var(--primary-color);
   font-weight: 800;
 }
 
-#projects-section ul li {
+main ul li {
   margin: 0 40px 0 0;
   float: left;
   cursor: pointer;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+}
+
+.filtr-container .filtr-item{
+  padding: 0.75rem 0.75rem;
 }
 
 .project-photo {
@@ -235,7 +173,7 @@ nav .sidenav-trigger i {
   background-image: url(../images/projects/property-search-dashboard.png);
 }
 
-#projects-section .col {
+main .col {
   padding: 0.75rem 0.75rem;
 }
 
@@ -271,19 +209,6 @@ nav .sidenav-trigger i {
 /*-----------------------------*/
 /*-----  contact section  -----*/
 /*-----------------------------*/
-#contact-section {
-  padding-top: 150px;
-  padding-bottom: 150px;
-  margin-bottom: 0px;
-}
-
-#contact-section .contact-form {
-  background-color: white;
-  border-radius: 5px;
-  overflow: auto;
-  padding: 20px;
-}
-
 .fab {
   padding: 20px;
   font-size: 30px;
@@ -298,23 +223,6 @@ nav .sidenav-trigger i {
   padding-top: 40px;
 }
 
-.input-field .prefix.active,
-.input-field>label:not(.label-icon).active,
-input:not([type]):focus:not([readonly])+label,
-input[type=text]:not(.browser-default):focus:not([readonly])+label,
-input[type=email]:not(.browser-default):focus:not([readonly])+label,
-textarea.materialize-textarea:focus:not([readonly])+label {
-  color: #b79f7d;
-}
-
-input:not([type]):focus:not([readonly]),
-input[type=text]:not(.browser-default):focus:not([readonly]),
-input[type=email]:not(.browser-default):focus:not([readonly]),
-textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #b79f7d;
-  -webkit-box-shadow: 0 1px 0 0 #b79f7d;
-  box-shadow: 0 1px 0 0 #b79f7d;
-}
 
 #my-email {
   font-family: monospace;
@@ -334,56 +242,22 @@ textarea.materialize-textarea:focus:not([readonly]) {
   #navbar .container {
     width: 100%;
   }
-  /*-----  about  -----*/
-  #aboutme-section {
-    padding-top: 70px;
-  }
-  .about-img-bg {
-    border: 16px solid #b8a07e;
-    width: 50vw;
-  }
-  .about-img-bg img {
-    height: 81vw;
-    width: 50vw;
-  }
   h5 {
     font-size: 1.3rem;
     font-weight: 700;
   }
-  /*-----  skills  -----*/
-  #skills-section {
-    padding-top: 5px;
-    padding-bottom: 20px;
-  }
   /*-----  projects  -----*/
-  #projects-section {
+  main {
     padding-top: 0px;
   }
   .project-photo {
     height: 45vw;
   }
-  #projects-section .col {
+  main .col {
     padding: 0.75rem 0rem;
   }
   /*-----  contact  -----*/
-  #contact-section .contact-form {
-    padding: 0px;
-  }
-  #contact-section .input-field .prefix {
-    width: 2rem;
-    font-size: 1.5rem;
-  }
-  .input-field .prefix~input {
-    width: calc(100% - 2rem);
-  }
-  .input-field .prefix~label {
-    margin-left: 2rem;
-  }
-  .input-field.col .prefix~label,
-  .input-field.col .prefix~.validate~label {
-    width: calc(100% - 2rem - 1.5rem);
-  }
-  #contact-section .fab {
+  .fab {
     padding: 10px;
   }
   #my-email {

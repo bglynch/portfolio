@@ -92,10 +92,13 @@
       </code></pre>
 
       <h4 class="left-align">Test Source Code</h4>
+      <p>Add a dummy funciton to test against<br>
+      The function 
+      </p>
       <h5 class="file-name">src/custom_functions.py</h5>
       <pre><code class="language-python">
-      def add():
-        return 2
+      def hello_world():
+        return "hello world"
       </code></pre>
 
       <h5 class="file-name">src/tests/test_custom_functions.py</h5>
@@ -103,10 +106,9 @@
       import unittest
       import src.custom_functions as cf
       
-      class MyFirstTests(unittest.TestCase):   
-          def test_add(self):
-              # combine number and letter
-              self.assertEqual(cf.add(),  2)
+      class CustomFunctionsTests(unittest.TestCase):   
+          def test_hello_world(self):
+              self.assertEqual(cf.hello_world(),  "hello world")
       
       if __name__ == '__main__':
           unittest.main()
