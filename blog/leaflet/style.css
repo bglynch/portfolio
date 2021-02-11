@@ -1,0 +1,60 @@
+:root{
+  /* structure */
+  --Hheader: 64px;
+  --Hlist: calc(100vh - var(--Hheader));
+  --Hdesc: 250px;
+  --Hmap: calc(100vh - var(--Hheader) - var(--Hdesc));
+  
+  --Wlist:40%;
+  --WMap:calc(100vw - var(--Wlist));
+  --Wdesc:calc(100vw - var(--Wlist));
+}
+
+header{
+  position: absolute;
+  height: var(--Hheader);
+  top:0;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  width: 100%;
+  border-bottom: 1px solid #dcdcdc7a;
+}
+header a{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000;
+  text-decoration: none;
+}
+header a span{
+  font-weight: 300;
+  font-size: 24px;
+}
+h2{
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#map {
+    position: absolute;
+    top: var(--Hheader);
+    right: 0px;
+    width: var(--WMap);
+    height: var(--Hmap)
+  }
+#list {
+  position: absolute;
+  top: var(--Hheader);
+  left: 0px;
+  width: var(--Wlist);
+  height: var(--Hlist);
+  padding-left: 20px;
+}
+#desc {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: var(--Hdesc);
+  width: var(--Wdesc);
+}
