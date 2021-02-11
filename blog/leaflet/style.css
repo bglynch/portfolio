@@ -9,6 +9,9 @@
   --WMap:calc(100vw - var(--Wlist));
   --Wdesc:calc(100vw - var(--Wlist));
 }
+*{
+  box-sizing: border-box;
+}
 
 header{
   position: absolute;

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <a href="../../index.html">Brian Lynch<span> | Developer</span></a>
+  </header>
+  <section id="list"></section>
+  <section id="map"></section>
+  <section id="desc"></section>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="./common.js"></script>
+  <script>
+    let numberOfMarkers = 200;
+
+    let html = `<svg><path fill="#2d6099" d="M44 0q6 0 6 6v9q0 6-6 6H29l-4 6L21 21H7Q0 21 0 15V6Q0 0 6 0Z"/><text x="8" y="14.5" fill="#fff">€125K</text></svg>`;
+    const iconOptions = {
+        iconSize: [43, 27],
+        iconAnchor: [24.5, 27],
+        shadowSize: [20, 30],
+        className: `mymarker`,
+        html: html
+    };
+    const markerOptions = {
+      draggable: false,
+      icon: L.divIcon(iconOptions)
+  };
+    for (var i = 0; i < numberOfMarkers; i += 1) { 
+      L.marker(getRandomLatLng(), markerOptions).addTo(map);
+    }
+  </script>
+</body>
+</html>
