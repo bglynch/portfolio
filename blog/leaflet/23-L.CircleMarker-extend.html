@@ -143,13 +143,8 @@
         r = Math.sqrt(y / Math.PI)
         return r;
     }
-    
-    // This is very important! Use a canvas otherwise the chart is too heavy for the browser when
-    // the number of points is too high, as in this case where we have around 300K points to plot
+
     var myRenderer;
-    //  = L.canvas({
-    //     padding: 0.5
-    // });
     
     //create style, with fillColor picked from color ramp
     function style(feature) {
@@ -204,40 +199,6 @@
             '</div></td></tr></tbody></table>'
     
         layer.bindPopup(popup);
-    }
-    
-    function makeIcon(name, color) {
-    
-        if (name == "diamond") {
-            // here's the SVG for the marker
-            var icon = `
-                <svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='20' height='20'>
-                <path stroke='${color}' stroke-width='3' fill='none' d='M10,1 5,10 10,19, 15,10Z'/>
-                </svg>`;
-        }
-    
-        // Based on http://www.smiffysplace.com/stars.html
-        if (name == "6-pointed-star") {
-            // here's the SVG for the marker
-            var icon = `
-                <svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='28' height='28'>
-                <path stroke='${color}' stroke-width='3' fill='none' d='m13 13m0 5l5 3.66l-0.67 -6.16l5.67 -2.5l-5.67 -2.5l0.67 -6.16l-5 3.66l-5 -3.66l0.67 6.16l-5.67 2.5l5.67 2.5l-0.67 6.16z'/>
-                </svg>`;
-        }
-    
-        // here's the trick, base64 encode the URL
-        var svgURL = "data:image/svg+xml;base64," + btoa(icon);
-    
-        // create icon
-        var svgIcon = L.icon({
-            iconUrl: svgURL,
-            iconSize: [20, 20],
-            shadowSize: [12, 10],
-            iconAnchor: [5, 5],
-            popupAnchor: [5, -5]
-        });
-    
-        return svgIcon
     }
     
     function renderChart(data) {

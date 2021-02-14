@@ -35,14 +35,14 @@
       letter-spacing: 1px;
     ">&#8364;125K</text>
     </svg>`;
-var iconUrl = 'data:image/svg+xml;base64,' + btoa(svg);
+    var iconUrl = 'data:image/svg+xml;base64,' + btoa(svg);
 
-var icon = L.icon( {
-      iconUrl: iconUrl,
-      iconSize: [50, 27],
-      iconAnchor: [25, 27],
-      shadowSize: [50, 30],
-  } );
+    var icon = L.icon( {
+          iconUrl: iconUrl,
+          iconSize: [50, 27],
+          iconAnchor: [25, 27],
+          shadowSize: [50, 30],
+      });
     for (var i = 0; i < numberOfMarkers; i += 1) { 
       L.marker(getRandomLatLng(), { icon }).addTo(map);
     }

@@ -18,8 +18,9 @@ function createList() {
     <a href="./21-circleMarker.html"><p>L.circleMarker, 10,000 markers</p></a>
     <a href="./22-leafletMarkersCanvas.html"><p>Plugin: leaflet-markers-canvas, L.Icon (png)</p></a>
     <a href="./22.1-leafletMarkersCanvas.html"><p>Plugin: leaflet-markers-canvas, L.Icon (svg to encoded base-64)</p></a>
-    <a href="./23-L.CircleMarker-extend.html"><p>L.circleMarker.extend</p></a>
+    <a href="./23-L.CircleMarker-extend.html"><p>L.circleMarker.extend to star</p></a>
     <a href="./24-L.CircleMarker-custom.html"><p>L.circleMarker modify src</p></a>
+    <a href="./25-L.CircleMarker-extend.html"><p>L.circleMarker extend to price</p></a>
     <a href="./21-circle-markers.html"><p>L.circleMarker (leaflet mod)</p></a>
     `
     document.getElementById('list').innerHTML = html;  
