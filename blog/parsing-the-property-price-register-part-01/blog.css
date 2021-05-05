@@ -1,0 +1,77 @@
+nav{
+    position: fixed;
+    top: 0px;
+    background-color: #fff;
+    height: 72px;
+    line-height: 72px;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 600;
+    z-index: 100;
+}
+.brand-logo {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #000;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    display: inline-block;
+    text-decoration: none;
+}
+#write{
+    margin-top: 20px;
+}
+
+h1{
+    border-bottom: none;
+    font-size: 32px;
+    line-height: 40px;
+}
+h1 span{
+    font-size: 26px;
+    line-height: 1.5;
+}
+h2,h3,h4,h5{
+    font-weight: 600;
+}
+h2{
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 48px;
+    margin-bottom: 25px;
+}
+h3{
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+h4{
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+h5{
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+h6{
+    font-size: 12px;
+}
+#write {
+    max-width: 1000px;
+}
+
+
+
+.md-fences, code, tt{
+    font-size: 11px;
+}
+#write p, li, tbody{
+    font-size: 13px;
+}
